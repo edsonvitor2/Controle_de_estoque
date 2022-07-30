@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title> Controle de estoque </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="app.js"></script>
+
+</head>
+<body onload="inicio()" >
+    <div id="tab" class="espec">
+    <table>
+    <tr>
+        <td class="tabela">Produto</td>
+        <td class="tabela">Total</td>
+        <td class="tabela">Entrada</td>
+        <td class="tabela">Saida</td>
+        <td class="tabela">Preço Entrada</td>
+        <td class="tabela">Preço Saida</td>
+        <td class="tabela">Lucro</td>
+    </tr>
+    <tr><td class="tabela" id="p1produto" onclick="identProd('Produto1')">Produto 1</td>
+        <td class="tabela" id="p1total">0</td>
+        <td class="tabela" id="p1entrada">0</td>
+        <td class="tabela" id="p1saida">0</td>
+        <td class="tabela" id="p1precoentrada">0</td>
+        <td class="tabela" id="p1precosaida">0</td>
+        <td class="tabela" id="p1lucro">0</td> 
+    </tr>
+    <tr><td class="tabela" id="p2produto" onclick="identProd('Produto2')">Produto 2</td>
+        <td class="tabela" id="p2total">0</td>
+        <td class="tabela" id="p2entrada">0</td>
+        <td class="tabela" id="p2saida">0</td>
+        <td class="tabela" id="p2precoentrada">0</td>
+        <td class="tabela" id="p2precosaida">0</td>
+        <td class="tabela" id="p2lucro">0</td> 
+    </tr>
+    <tr><td class="tabela" id="p3produto" onclick="identProd('Produto3')">Produto 2</td>
+        <td class="tabela" id="p3total">0</td>
+        <td class="tabela" id="p3entrada">0</td>
+        <td class="tabela" id="p3saida">0</td>
+        <td class="tabela" id="p3precoentrada">0</td>
+        <td class="tabela" id="p3precosaida">0</td>
+        <td class="tabela" id="p3lucro">0</td> 
+    </tr>
+    <tr><td class="tabela" id="p4produto" onclick="identProd('Produto4')">Produto 2</td>
+        <td class="tabela" id="p4total">0</td>
+        <td class="tabela" id="p4entrada">0</td>
+        <td class="tabela" id="p4saida">0</td>
+        <td class="tabela" id="p4precoentrada">0</td>
+        <td class="tabela" id="p4precosaida">0</td>
+        <td class="tabela" id="p4lucro">0</td> 
+    </tr>
+    </table>
+    </div>
+    <form id="form" action="">
+        <fieldset>
+            <legend id="produto">Produto</legend>
+            <div id="locprod"> = </div>
+        
+            <p>Entrada:</p> <input type="number" id="NumeroEntrada" placeholder="numero de itens">
+            <p>Preço de Entrada:</p> <input type="text" id="ValorEntrada" placeholder=" valor entrada"> 
+            <p>Preço de Saida:</p> <input type="number" id="ValorSaida" placeholder="valor de Venda"></br></br>
+        <button type="button" onclick="entrada()">Enviar</button>
+        </fieldset>
+    </form>
+
+</body>
+  
+</html>

@@ -1,0 +1,17 @@
+*{
+	margin: 10;
+}
+.tabela{
+	border: solid;
+	padding: 12px;
+	text-align: center;
+}
+table{
+	border: solid;
+}
+form#form{
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	width: 40%;
+}
