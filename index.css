@@ -9,9 +9,28 @@
 table{
 	border: solid;
 }
-form#form{
-	position: absolute;
-	top: 10px;
-	left: 50%;
+div#geral{
+	height: 600px;
+}
+.espec{
 	width: 40%;
+	position: relative;
+}
+.form{
+	position: relative;
+	width: 40%;
+	left: 45%;
+	top: -345px;
+}
+
+.lista{
+	top: -300px;
+	width: 40%;
+	position: relative;
+}
+.venda{
+	left: 45%;
+	top: -450px;
+	width: 40%;
+	position: relative;
 }
